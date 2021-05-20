@@ -33,7 +33,8 @@ module.exports = merge(common, {
           publicPath(path) {
             return `assets/images/${path}`;
           }
-        }
+        },
+        type: 'javascript/auto'
       },
       {
         test: /\.woff$/,
@@ -44,8 +45,9 @@ module.exports = merge(common, {
           publicPath(path) {
             return `fonts/${path}`;
           }
-        }
+        },
+        type: 'javascript/auto'
       }
     ]
-  },
+  }
 });
